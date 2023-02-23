@@ -1,0 +1,45 @@
+#Performed in Oxcal version 4.4:
+
+Plot() 
+{
+Outlier_Model("General",T(5),U(0,4),"t");
+Curve("IntCal20","IntCal20.14c"); 
+Curve("Marine20","Marine20.14c"); 
+Sequence()
+{
+Boundary("Start Unit 13C"); 
+Phase("Unit 13C")
+{
+Curve("=IntCal20"); 
+R_Date("UGAMS-5404", 8550, 30) 
+{
+Outlier("General", 0.05);
+};
+Curve("=Marine20"); 
+Delta_R("Patella", -134, 49); 
+R_Date("ICA-14C-5552", 8950, 60) 
+{
+Outlier("General", 0.05);
+};
+R_Date("ICA-14C-5553", 9010, 60)
+{
+Outlier("General", 0.05); 
+};
+Interval("Duration of Unit 13C");
+Date("Sample from Unit 13C");
+};
+Boundary("End Unit 13C");
+Boundary("Start Unit 10"); 
+Phase("Unit 10")
+{
+Curve("=IntCal20");
+R_Date("UGAMS-5405", 8400, 30) 
+{
+Outlier("General", 0.05);
+};
+Interval("Duration of Unit 10"); 
+Date("Sample from Unit 10");
+};
+Boundary("End Unit 10");
+};
+};
