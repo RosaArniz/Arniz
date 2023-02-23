@@ -1,0 +1,180 @@
+#Perfomed in Oxcal version 4.4:
+
+Plot() 
+{
+Outlier_Model("General",T(5),U(0,4),"t"); 
+Curve("IntCal20","IntCal20.14c"); 
+Curve("Marine20","Marine20.14c");
+Sequence()
+{
+Boundary("Start Unit 20");
+Phase("Unit 20")
+{
+Curve("=IntCal20");
+R_Date("ICA-17B/0438", 6520, 40) 
+{
+Outlier("General", 0.05);
+};
+Curve("=Marine20"); 
+Delta_R("Patella", 102, 119);
+R_Date("ICA-14C-5558", 6620, 50) 
+{
+Outlier("General", 0.05);
+};
+R_Date("ICA-14C-5559", 6850, 40) 
+{
+Outlier("General", 0.05); 
+};
+Curve("=Marine20");
+Delta_R("Phorcus", -98, 104); 
+R_Date("ICA-14C-6010", 6850, 40) 
+{
+Outlier("General", 0.05);
+};
+R_Date("ICA-14C-6011", 6930, 40)
+{
+Outlier("General", 0.05);
+};
+Interval("Duration of Unit 20"); 
+Date("Sample from Unit 20");
+};
+Boundary("End Unit 20"); 
+Boundary("Start Unit 21");
+Phase("Unit 21")
+{
+Curve("=IntCal20"); 
+R_Date("UGAMS-5401", 6750, 30) 
+{
+Outlier("General", 0.05);
+};
+R_Date("UGAMS-5400", 7080, 30)
+{
+Outlier("General", 0.05);
+};
+Curve("=Marine20");
+Delta_R("Patella", 102, 119); 
+R_Date("ICA-14C-5561", 7240, 60) 
+{
+Outlier("General", 0.05); 
+};
+R_Date("ICA-14C-5560", 7430, 60)
+{
+Outlier("General", 0.05); 
+};
+Curve("=Marine20");
+Delta_R("Phorcus", -98, 104);
+R_Date("ICA-14C-6012", 6890, 40)
+{
+Outlier("General", 0.05);
+};
+R_Date("ICA-14C-6013", 6590, 40) 
+{
+Outlier("General", 0.05); 
+};
+Interval("Duration of Unit 21");
+Date("Sample from Unit 21"); 
+};
+Boundary("End Unit 21");
+Boundary("Start Unit 22"); 
+Phase("Unit 22")
+{
+Curve("=IntCal20");
+R_Date("UBA-4600", 6812, 46) 
+{
+Outlier("General", 0.05); 
+};
+R_Date("UGAMS-5402", 6810, 30)
+{
+Outlier("General", 0.05);
+};
+Curve("=Marine20");
+Delta_R("Patella", 102, 119);
+R_Date("ICA-14C-5562", 6900, 50) 
+{
+Outlier("General", 0.05); 
+};
+R_Date("ICA-14C-5563", 7320, 60) 
+{
+Outlier("General", 0.05);
+
+};
+Curve("=Marine20"); 
+Delta_R("Phorcus", -98, 104); 
+R_Date("ICA-14C-6014", 6730, 40) 
+{
+Outlier("General", 0.05); 
+};
+R_Date("ICA-14C-6015", 6820, 41)
+{
+Outlier("General", 0.05);
+};
+Interval("Duration of Unit 22");
+Date("Sample from Unit 22"); };
+Boundary("End Unit 22");
+};
+Sequence() 
+{
+Boundary("Start Unit 17"); 
+Phase("Unit 17")
+{
+Curve("=IntCal20");
+R_Date("UGAMS-5403", 6430, 30)
+{
+Outlier("General", 0.05);
+};
+Curve("=Marine20"); 
+Delta_R("Patella", 102, 119); 
+R_Date("ICA-14C-5561", 6480, 50) 
+{
+Outlier("General", 0.05);
+};
+R_Date("ICA-14C-5560", 6710, 50) 
+{
+Outlier("General", 0.05);
+};
+Curve("=Marine20");
+Delta_R("Phorcus", -98, 104);
+R_Date("ICA-14C-6008", 6600, 40) 
+{
+Outlier("General", 0.05);
+};
+R_Date("ICA-14C-6007", 6890, 40)
+{
+Outlier("General", 0.05); 
+};
+Interval("Duration of Unit 17");
+Date("Sample from Unit 17"); };
+Boundary("End Unit 17");
+Boundary("Start Unit 19"); 
+Phase("Unit 19")
+{
+Curve("=IntCal20"); 
+R_Date("ICA-17B/0437", 6770, 40) 
+{
+Outlier("General", 0.05); 
+};
+Curve("=Marine20");
+Delta_R("Patella", 102, 119); 
+R_Date("ICA-14C-5556", 7190, 40) 
+{
+Outlier("General", 0.05);
+};
+R_Date("ICA-14C-5557", 7250, 60) 
+{
+Outlier("General", 0.05);
+};
+Curve("=Marine20"); 
+Delta_R("Phorcus", -98, 104);
+R_Date("ICA-14C-6008", 6960, 40) 
+{
+Outlier("General", 0.05); 
+};
+R_Date("ICA-14C-6009", 7020, 40) 
+{
+Outlier("General", 0.05); 
+};
+Interval("Duration of Unit 19");
+Date("Sample from Unit 19"); };
+Boundary("End Unit 19");
+}; 
+};
