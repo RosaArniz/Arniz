@@ -16,7 +16,7 @@ R_Date("UGAMS-5404", 8550, 30)
 Outlier("General", 0.05);
 };
 Curve("=Marine20"); 
-Delta_R("Patella", -134, 49); 
+Delta_R("Patella", -184, 54); 
 R_Date("ICA-14C-5552", 8950, 60) 
 {
 Outlier("General", 0.05);
